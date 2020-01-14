@@ -27,3 +27,5 @@ steps:
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/**/site/cobertura/coverage.xml'
     pathToSources: '''$(System.DefaultWorkingDirectory)/**/**/src/main/java/'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/**/site/cobertura'
+
+- task: SonarQubeAnalyze@4
