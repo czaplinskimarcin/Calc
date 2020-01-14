@@ -1,7 +1,11 @@
 - task: SonarQubePrepare@4
   inputs:
     SonarQube: 'SonarQube'
-    scannerMode: 'Other'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'Calc'
+    cliProjectName: 'Calc'
+    cliSources: '.'
 
 trigger:
 - master
