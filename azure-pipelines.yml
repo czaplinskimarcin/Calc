@@ -25,7 +25,7 @@ steps:
     configMode: 'manual'
     cliProjectKey: 'Calc'
     cliProjectName: 'Calc'
-    cliSources: '.'
+    cliSources: 'src/main/java'
 
 - task: PublishCodeCoverageResults@1
   inputs:
