@@ -6,6 +6,9 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+schedules:
+- cron: "0 0 * * *"
+
 steps:
 - task: Maven@3
   inputs:
